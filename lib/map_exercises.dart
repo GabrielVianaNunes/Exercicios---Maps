@@ -69,7 +69,7 @@ void removerCidades() {
   final qtd = readInt('Quantas cidades deseja cadastrar? ', min: 1);
   final mapa = <String, String>{};
   for (var i = 1; i <= qtd; i++) {
-    final cidade = readLine('[${i}/$qtd] Cidade: ');
+    final cidade = readLine('[$i/$qtd] Cidade: ');
     final estado = readLine('Estado (sigla ou nome): ');
     mapa[cidade] = estado;
   }
